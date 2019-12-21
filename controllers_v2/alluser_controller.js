@@ -1206,7 +1206,7 @@ exports.login = function (req, res, next) {
         // console.log('login_err_no_authority');
 
         res.json({results: 1, mesg: 'No authority!'})
-      } else if (_password !== item.password && openIdFlag === 0) {
+      } else if (password !== item.password && openIdFlag === 0) {
       // } else if (password !== item.password && openIdFlag === 0) {
         // 2017-06-07GY调试
         // console.log('login_err_password_not_correct');
